@@ -74,10 +74,12 @@ def shuffleIndex(index_path : str):
 
 def main():
 
+    # Get the path of the index file (first arg)
     if len(sys.argv) > 1:
         main_index_path = sys.argv[1]
+    # Default path
     else:
-        main_index_path = "S:\\source\\image-generator\\out\\index.csv" # If no index path is specified
+        main_index_path = "S:\\source\\image-generator\\out\\index.csv"
 
     separateIndex(main_index_path)
     
